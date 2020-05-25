@@ -725,7 +725,7 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: 2em;
+  font-size: 5em;
   margin: 0.67em 0;
 }
 hr {
@@ -1027,7 +1027,7 @@ img {
 }
 .jumbotron {
   padding: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   text-align: center;
 }
 .content,
@@ -1211,13 +1211,13 @@ img {
 }
 .video-inner {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 30%;
   transform: translate(-50%, -65%);
 }
 .video-inner a,
 .video-inner {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 .video-learn-more {
@@ -1955,8 +1955,7 @@ a.toc-link {
   color: #e6e6e6;
 }
 .footer {
-  border-top: 0.1rem #e6e6e6 solid;
-  padding: 3rem 0;
+  padding: 0rem 0;
 }
 .float-left {
   float: left !important;
