@@ -726,7 +726,11 @@ body {
 }
 h1 {
   font-size: 5em;
-  margin: 0.67em 0;
+  margin: 0em 0;
+}
+h2 {
+  font-size: 4em;
+  margin: 0em 0;
 }
 hr {
   box-sizing: content-box /* 1 */;
@@ -879,7 +883,7 @@ html {
 body {
   position: relative;
   background-color: #fff;
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-family: futura;
   font-size: 1.4rem;
   line-height: 1.7;
   color: #1e3e3f;
@@ -1176,7 +1180,7 @@ img {
 }
 .video-frame {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1212,13 +1216,14 @@ img {
 .video-inner {
   position: absolute;
   top: 60%;
-  left: 30%;
+  left: 24%;
   transform: translate(-50%, -65%);
 }
 .video-inner a,
 .video-inner {
   color: #000;
   text-decoration: none;
+  text-align: left;
 }
 .video-learn-more {
   position: absolute;
@@ -2308,56 +2313,28 @@ pre .javascript .function {
     transform: translateY(-100%);
   }
 }
-.navbar {
-  position: relative;
-  padding-top: 3rem;
-  text-align: center;
-}
-.navbar .nav {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
-}
-.navbar .nav .nav-item-link {
-  display: block;
-  padding: 1rem;
-  color: #172d3e;
-  text-decoration: none;
-  cursor: pointer;
-}
-.navbar .nav .nav-item-link:hover {
-  color: #1594c6;
-}
-.navbar .nav.nav-main .nav-item-link::before,
-.navbar .nav.nav-main .nav-item-link i.fe {
-  display: block;
-  line-height: 1;
-}
-.navbar .nav.nav-main .nav-item-link::before {
-  font-family: 'feathericon';
-}
-.navbar .nav.nav-main .nav-item:nth-child(1) .nav-item-link::before {
-  content: '\f12f';
-}
-.navbar .nav.nav-main .nav-item:nth-child(2) .nav-item-link::before {
-  content: '\f12a';
-}
-.navbar .nav.nav-main .nav-item:nth-child(3) .nav-item-link::before {
-  content: '\f1a9';
-}
-.navbar .nav.nav-main .nav-item:nth-child(4) .nav-item-link::before {
-  content: '\f174';
-}
-.navbar-bottom {
-  position: absolute;
-  bottom: 0;
+.nav-main {
+  list-style-type: none;
+  position: fixed;
+  left: 0;
+  top: -14px;
   width: 100%;
+  overflow: hidden;
+  background-color: #111;
 }
-.logo {
+.nav-main .nav-item {
+  float: left;
+}
+.nav-main .nav-item .nav-item-link {
+  display: block;
+  color: #fff;
   text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  margin-left: 32em;
 }
-.logo img {
-  width: 4.2rem;
+.nav-main .nav-item .nav-item-link:hover {
+  background-color: #333;
 }
 .totop {
   position: relative;
